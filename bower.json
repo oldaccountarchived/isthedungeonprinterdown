@@ -1,0 +1,20 @@
+{
+  "name": "isthedungeonprinterdown",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jacobj/isthedungeonprinterdown",
+  "authors": [
+    "Jacob Jenkins <jacob@jacobejenkins.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "twemoji-awesome": "https://github.com/ellekasai/twemoji-awesome.git#gh-pages"
+  }
+}
