@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jacobj/isthedungeonprinterdown/issues"
   },
-  "homepage": "https://github.com/jacobj/isthedungeonprinterdown#readme"
+  "homepage": "https://github.com/jacobj/isthedungeonprinterdown#readme",
+  "devDependencies": {
+    "node-inspector": "^0.12.2"
+  }
 }
