@@ -1,0 +1,19 @@
+{
+  "name": "isthedungeonprinterdown",
+  "version": "1.0.0",
+  "description": "Is the dungeon printer down?",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jacobj/isthedungeonprinterdown.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobj/isthedungeonprinterdown/issues"
+  },
+  "homepage": "https://github.com/jacobj/isthedungeonprinterdown#readme"
+}
