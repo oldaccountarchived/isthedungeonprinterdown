@@ -1,0 +1,14 @@
+{
+  "name": "twemoji-awesome",
+  "homepage": "https://github.com/ellekasai/twemoji-awesome",
+  "_release": "07ba205dbd",
+  "_resolution": {
+    "type": "branch",
+    "branch": "gh-pages",
+    "commit": "07ba205dbd1647a94b5fc4c21d1c10c89475f32f"
+  },
+  "_source": "https://github.com/ellekasai/twemoji-awesome.git",
+  "_target": "gh-pages",
+  "_originalSource": "https://github.com/ellekasai/twemoji-awesome.git",
+  "_direct": true
+}
