@@ -15,7 +15,7 @@ function StatusController($scope) {
         return result;
     }
     
-    $scope.localAuth = function() {
+    this.localAuth = function() {
         var keylength = 128;
         var characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         if (!localStorage.key || localStorage.key.length < keylength) {
@@ -27,15 +27,15 @@ function StatusController($scope) {
         }
     };
 
-    $scope.getStatus = function() {
+    this.getStatus = function() {
         
     };
     
-    $scope.voteDown = function() {
+    this.voteDown = function() {
         
     };
 
-    $scope.voteUp = function() {
+    this.voteUp = function() {
 
     };
 };
