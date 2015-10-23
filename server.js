@@ -1,10 +1,16 @@
 /*global __dirname, require*/
 var exec = require('child_process').exec,
     express = require('express'),
+    bodyParser = require('body-parser'),
     path = require('path'),
     q = require('q');
 
+// Evil global variable that doesn't save state. Nice.
+var status = 'down';
+
 var app = express();
+
+app.use(bodyParser.json());
 
 app.use(express.static('public'));
 
@@ -13,11 +19,12 @@ app.get('/', function (req, res) {
 });
 
 app.post('/report', function (req, res) {
-    
+    status = req.body.status;
+    res.send("OKAY");
 });
 
 app.get('/status', function (req, res) {
-    res.json({status: 'up'});
+    res.json({status: status});
 });
 
 var server = app.listen(3000, function () {

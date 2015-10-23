@@ -4,12 +4,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="js/status.js"></script>
     <link href="lib/twemoji-awesome/twemoji-awesome.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body ng-controller="StatusController as status" ng-init="status.getStatus()" data-ng-class='status.bgClass'>
-    <div class="section" id="section1">
-        <h1 class="custom-text"><i ng-class="status.emojiClass"></i> {{ status.saying }} <i ng-class="status.emojiClass"></i></h1>
+    <div class="aligner">
+        <div class="aligner-item">
+            <h1 class="custom-text"><i ng-class="status.emojiClass"></i> {{ status.saying }} <i ng-class="status.emojiClass"></i></h1>
+            <div class="grid">
+                <div class="grid__col grid__col--1-of-6"></div>
+                <div class="grid__col grid__col--1-of-6"></div>
+                <div class="grid__col green-btn grid__col--1-of-6" style="margin:10px; text-align:center;" ng-click="status.reportStatus('up')"><b> Yo, it's up! </b></div>
+                <div class="grid__col red-btn grid__col--1-of-6" style="margin:10px; text-align:center;" ng-click="status.reportStatus('down')"><b> Yo, it's down! </b></div>
+                <div class="grid__col grid__col--1-of-6"></div>
+                <div class="grid__col grid__col--1-of-6"></div>
+            </div>
+        </div>
     </div>
     <div ng-class="status.footerClass">
         <b>Terrible jokes courtesy of </b> <a href="http://www.jacobejenkins.com"> Jacob Jenkins. </a>

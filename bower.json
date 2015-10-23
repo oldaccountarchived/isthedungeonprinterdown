@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
+    "toast": "~1.2.4",
     "twemoji-awesome": "https://github.com/ellekasai/twemoji-awesome.git#gh-pages"
   }
 }
