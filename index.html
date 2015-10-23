@@ -1,16 +1,19 @@
 <html ng-app="IsTheDungeonPrinterDown">
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
-        <script src="app.js"></script>
-        <link href="lib/twemoji-awesome/twemoji-awesome.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body ng-controller="CoreController as core" ng-init="core.getStatus()" data-ng-class='core.bgClass'>
-        <div class="section" id="section1">
-            <h1 class="custom-text"><i ng-class="core.emojiClass"></i> {{ core.saying }} <i ng-class="core.emojiClass"></i></h1>
-        </div>
-        <div ng-class="core.footerClass">
-            <b>Terrible jokes courtesy of </b> <a href="http://www.jacobejenkins.com"> Jacob Jenkins. </a>
-        </div>
-    </body>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/status.js"></script>
+    <link href="lib/twemoji-awesome/twemoji-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body ng-controller="StatusController as status" ng-init="status.getStatus()" data-ng-class='status.bgClass'>
+    <div class="section" id="section1">
+        <h1 class="custom-text"><i ng-class="status.emojiClass"></i> {{ status.saying }} <i ng-class="status.emojiClass"></i></h1>
+    </div>
+    <div ng-class="status.footerClass">
+        <b>Terrible jokes courtesy of </b> <a href="http://www.jacobejenkins.com"> Jacob Jenkins. </a>
+    </div>
+</body>
+
 </html>
