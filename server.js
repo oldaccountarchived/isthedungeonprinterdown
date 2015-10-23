@@ -1,9 +1,7 @@
 /*global __dirname, require*/
-var exec = require('child_process').exec,
-    express = require('express'),
+var express = require('express'),
     bodyParser = require('body-parser'),
-    path = require('path'),
-    q = require('q');
+    path = require('path');
 
 // Evil global variable that doesn't save state. Nice.
 var status = 'down';

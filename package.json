@@ -18,5 +18,10 @@
   "homepage": "https://github.com/jacobj/isthedungeonprinterdown#readme",
   "devDependencies": {
     "node-inspector": "^0.12.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "q": "^1.4.1"
   }
 }
