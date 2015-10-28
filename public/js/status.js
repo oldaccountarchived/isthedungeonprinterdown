@@ -33,9 +33,10 @@ function StatusController($http) {
 
     this.reportStatus = function(status) {
         self.localAuth();
-        self.report = {};
-        self.report.status = status;
-        self.report.authtoken = localStorage.authToken;
+        self.report = {
+            status: status,
+            authToken: localStorage.authToken
+        };
         $http.post('/report', self.report).then(function(res) {
             self.getStatus();
         }, function(err) {
