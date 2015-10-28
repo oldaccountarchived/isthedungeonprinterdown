@@ -32,11 +32,11 @@ function StatusController($http) {
     };
 
     this.reportStatus = function(status) {
-        this.localAuth();
-        this.report = {};
-        this.report.status = status;
-        this.report.authtoken = localStorage.authToken;
-        $http.post('/report', this.report).then(function(res) {
+        self.localAuth();
+        self.report = {};
+        self.report.status = status;
+        self.report.authtoken = localStorage.authToken;
+        $http.post('/report', self.report).then(function(res) {
             self.getStatus();
         }, function(err) {
             console.err('Something went horribly wrong.');
