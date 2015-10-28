@@ -69,6 +69,7 @@ body {
     background: #D74742;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .red-btn:hover {
@@ -86,6 +87,7 @@ body {
     background:  #429540;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .green-btn:hover {
